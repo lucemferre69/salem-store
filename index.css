@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+}
+.layout {
+    margin: 0;
+    height: 1080px; /*esto es provisional para que todo se vea bien hasta que rellene la página*/
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    align-items: flex-start;
+}
+h2 {
+    text-align: center;
+}
+header {
+    display: flex;
+    height: 6%;
+    width: 100%;
+    margin-bottom: 2%;
+    position: fixed;
+}
+.inicio {
+    width: 20%;
+}
+.logo {
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    margin: 0;
+    margin-left: 5%;
+    width: 50%;
+    border: 1px solid black;
+}
+.carrito {
+    margin: 0;
+    width: 15%;
+    text-align: center;
+}
+.usuario {
+    margin: 0;
+    width: 15%;
+    text-align: left;
+}
+.banner {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 5%;
+    margin-top: 6%;
+}
+.muestra {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: space-evenly;
+}
+.box {
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+}
+.producto {
+    width: 300px;
+    height: auto;
+}
