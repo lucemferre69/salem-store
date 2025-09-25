@@ -47,11 +47,11 @@ h2 {
 }
 header {
     display: flex;
-    height: 6%;
+    height: 7%;
     width: 100%;
     margin-bottom: 2%;
     position: fixed;
-    margin-top: 1%;
+    background-color: black;
 }
 .inicio {
     width: 20%;
@@ -60,6 +60,7 @@ header {
     text-decoration: none;
     font-size: 50px;
     margin-left: 7%;
+    margin-bottom: 7px;
 }
 .logo {
     height: 100%;
@@ -70,6 +71,8 @@ h1 {
     margin-left: 5%;
     width: 50%;
     border: 1px solid white;
+    margin-bottom: 2%;
+    height: 68%;
 }
 
 .btn-cart {
@@ -338,7 +341,6 @@ h1 {
     gap: 40px;
 }
 .box {
-    border: 1px solid black;
     width: 300px;
     height: 400px;
     margin-bottom: 65px;
@@ -347,15 +349,25 @@ h1 {
 .producto {
     width: 300px;
     height: auto;
-    
+    margin-top: 45px;
+    margin-left: 0px;
+    background-color: black;
+}
+
+.InfoProducto{
+text-align: center;
+font-family: "AliceInWonderland", sans-serif;
+font-size: 30px;
+margin-top: -0.5px;
+
 }
 .prod{
   font-family: 'AliceInWonderland', sans-serif;
-    color: rgb(117, 4, 4);
-  font-size: 45px;
+    color: rgb(173, 7, 7);
+  font-size: 50px;
   margin-top: 40%;
   background-color: black;
-margin-bottom: 0;}
+  margin-bottom: 0;}
 
 .container input {
   position: absolute;
