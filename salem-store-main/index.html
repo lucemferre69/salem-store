@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Salem's Store</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="/css/index.css">
         <link rel="icon" href="/imagenes/logo.png" class="icon">
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     </head>
@@ -29,11 +29,13 @@
               <input type="text" id="search-input" placeholder="Buscar...">
             </div>
             <button data-quantity="0" class="btn-cart"> <!--Carrito de compras-->
+            <a href="carrito.html">
           <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
             <title>icon-cart</title>
             <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
           </svg>
           <span class="quantity"></span>
+          </a>
             </button> <!--Fin carrito de compras-->
             <label class="popup"> <!--Botón de usuario-->
             <input type="checkbox">
@@ -52,7 +54,7 @@
                 </svg>
                 <span>Iniciar Sesión</span>
                </button></a></li>
-               <li><a href="signUp.html" id="signUpBtn"><button>
+               <li><a href="register.html" id="signUpBtn"><button>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
                  <path d="M2.598 9h-1.055c1.482-4.638 5.83-8 10.957-8 6.347 0 11.5 5.153 11.5 11.5s-5.153 11.5-11.5 11.5c-5.127 0-9.475-3.362-10.957-8h1.055c1.443 4.076 5.334 7 9.902 7 5.795 0 10.5-4.705 10.5-10.5s-4.705-10.5-10.5-10.5c-4.568 0-8.459 2.923-9.902 7zm12.228 3l-4.604-3.747.666-.753 6.112 5-6.101 5-.679-.737 4.608-3.763h-14.828v-1h14.826z">
                  </path>
@@ -64,9 +66,9 @@
             </label> <!--Fin botón de usuario-->
         </header> <!--Fin header-->
             <div id="carrusel">
-                <img src="banner.jpg" alt="Producto 1">
-                <img src="banner3.png" alt="Producto 2">
-                <img src="bannerof.png" alt="Producto 3">
+                <img src="/imagenes/banner.jpg" alt="Producto 1">
+                <img src="/imagenes/banner3.png" alt="Producto 2">
+                <img src="/imagenes/bannerof.png" alt="Producto 3">
             </div>
             <p class="prod" id="catalogo">Productos:</p>
             <div id="muestra"> <!--Inicio muestra de catálogo-->
@@ -74,12 +76,13 @@
             </div> <!--Fin muestra de catálogo-->
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eaque molestiae sit, voluptatem nulla vero doloremque corporis autem temporibus! Iure ipsum qui, corporis distinctio dolore nostrum quod omnis vitae rem!</p>
     <footer>
+          <button id="cerrarSesionBtn">Cerrar Sesión</button>
     </footer>
-    <script>
-     const supabaseUrl = 'https://ihoexzjaofkjxuldrkzg.supabase.co';
-     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlob2V4emphb2Zranh1bGRya3pnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjAxMDUzODAsImV4cCI6MjA3NTY4MTM4MH0.MGy0R8r6ed9WA2FUKYsmln8lU7HtuLDmYyZc3mWuEQM';
-     const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+    <script type="module">
+    import { supabase } from "./js/supabaseClient.js";
+    window.supabase = supabase; // lo hace accesible globalmente
     </script>
-    <script src="index.js"></script>
+    <script type="module" src="/js/productos.js"></script>
+    <script type="module" src="/js/index.js"></script>
     </body>
 </html>

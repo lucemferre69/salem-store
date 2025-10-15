@@ -3,23 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <title>Log In | Salem's Store</title>
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="/css/login.css">
         <link rel="icon" href="/imagenes/favicon.ico">
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     </head>
     <body>
     <form id="loginForm">
     <h2 id="mensaje">Iniciar sesión</h2>
+    <div>
     <input type="email" id="correo" placeholder="Correo electrónico" required>
+    </div>
+    <div>
     <input type="password" id="contrasena" placeholder="Contraseña" required>
+    </div>
     <button type="submit">Entrar</button>
     <p></p>
     </form>
-    <script>
-     const supabaseUrl = 'https://ihoexzjaofkjxuldrkzg.supabase.co';
-     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imlob2V4emphb2Zranh1bGRya3pnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjAxMDUzODAsImV4cCI6MjA3NTY4MTM4MH0.MGy0R8r6ed9WA2FUKYsmln8lU7HtuLDmYyZc3mWuEQM';
-     const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+    <script type="module">
+    import { supabase } from "./js/supabaseClient.js";
+    window.supabase = supabase; // lo hace accesible globalmente
     </script>
-    <script src="login.js"></script>
+
+   <script type="module" src="/js/login.js">
+    </script>
     </body>
 </html>
