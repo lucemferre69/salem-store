@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel de Productos</title>
+ 
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 40px auto; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    input, button { padding: 10px; }
+    #panelAdmin { display: none; }
+  </style>
+</head>
+<body>
+  <h2>Administración de Productos</h2>
+  <h3>Id categorías: Remeras = 1. Pantalones = 2</h3>
+  <div id="panelAdmin">
+    <form id="formProducto">
+      <input type="text" id="nombre" placeholder="Nombre del producto" required>
+      <input type="number" id="precio" placeholder="Precio" required>
+      <textarea id="descripcion" placeholder="Descripción" required></textarea>
+      <input type="number" id="stock" placeholder="Stock" required>
+      <input type="text" id="talla" placeholder="Talla" required>
+      <input type="text" id="color" placeholder="Color" required>
+      <input type="numer" id="categoria" placeholder="Categoría (ID)" required>
+      <input type="file" id="imagen" accept="image/*" required>
+      <button type="submit">Guardar producto</button>
+    </form>
+  </div>
+
+  <p id="mensaje"></p> 
+  <script type="module" src="./js/admin.js"></script>
+</body>
+</html>
