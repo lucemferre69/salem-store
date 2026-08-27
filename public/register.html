@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up | Salem's Store</title>
+        <link rel="stylesheet" href="/css/register.css">
+        <link rel="icon" href="/imagenes/logo.png">
+    </head>
+    <body>
+    <header>
+        <a class="inicio" href ="index.html">Salem's Store</a>
+    </header>
+    <form id="formulario">
+    <h1>Registrarse</h1>
+        <div><label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+        </label></div>
+        <div><label>
+            <input type="text" id="apellido" placeholder="Apellido">
+        </label></div>
+      <div><label>
+            <input type="email" id="email" placeholder="Email" required>
+        </label></div>
+       <div><label>
+            <input type="password" id="password" placeholder="Contraseña" required>
+        </label></div> 
+       <div><label>
+            <input type="password" id="password2" placeholder="Repetir Contraseña" required>
+        </label></div>
+        <button id="registerBtn">Registrarse</button>
+        <p id="mensaje"></p>
+        <a class="redireccion" href="login.html">¿Ya tienes cuenta? Iniciar Sesión</a>
+    </form>
+    <script src="/js/signUp.js"></script>
+    </body>
+</html>

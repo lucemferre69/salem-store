@@ -1,0 +1,98 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Luca",
+      "apellido": "Reveco",
+      "email": "lucarevriv28@gmail.com",
+      "password": "gordobubu",
+      "rol": "admin"
+    },
+    {
+      "nombre": "Tobias",
+      "apellido": "Reveco",
+      "email": "tobivan29pro@gmail.com",
+      "password": "gordobubu",
+      "rol": "cliente",
+      "id": 2
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Remera básica blanca",
+      "precio": 8500,
+      "descripcion": "Remera de algodón básica blanca ideal para salir a cualquier lugar.",
+      "imagen": "/imgDB/logo.jpg",
+      "categoria": "remeras",
+      "stock": 20
+    },
+    {
+      "id": 2,
+      "nombre": "Remera básica negra",
+      "precio": 8500,
+      "descripcion": "Remera de algodón básica negra ideal para salir a cualquier lugar.",
+      "imagen": "/imgDB/logo.jpg",
+      "categoria": "remeras",
+      "stock": 10
+    },
+    {
+      "id": 3,
+      "nombre": "Remera básica roja",
+      "precio": 9000,
+      "descripcion": "Remera de algodón básica roja ideal para salir a cualquier lugar.",
+      "imagen": "/imgDB/logo.jpg",
+      "categoria": "remeras",
+      "stock": 5
+    },
+    {
+      "id": 4,
+      "nombre": "Remera básica gris",
+      "precio": 10000,
+      "descripcion": "Remera de algodón básica gris ideal para salir a cualquier lugar.",
+      "imagen": "/imgDB/logo.jpg",
+      "categoria": "remeras",
+      "stock": 30
+    },
+    {
+      "id": 5,
+      "nombre": "Remera básica verde",
+      "precio": 4000,
+      "descripcion": "Remera de algodón básica verde ideal para salir a cualquier lugar.",
+      "imagen": "/imgDB/logo.jpg",
+      "categoria": "remeras",
+      "stock": 6
+    },
+    {
+      "id": 6,
+      "nombre": "Remera básica azul",
+      "precio": 5000,
+      "descripcion": "Remera de algodón básica azul ideal para salir a cualquier lugar.",
+      "imagen": "/imgDB/logo.jpg",
+      "categoria": "remeras",
+      "stock": 25
+    }
+  ],
+  "carritos": [
+    {
+      "id": 1,
+      "usuarioId": 1,
+      "items": [],
+      "total": 0
+    },
+    {
+      "usuarioId": 2,
+      "items": [
+        {
+          "productoId": 1,
+          "nombre": "Remera básica blanca",
+          "precio": 8500,
+          "imagen": "/imgDB/logo.jpg",
+          "cantidad": 2
+        }
+      ],
+      "total": 17000,
+      "id": 2
+    }
+  ]
+}

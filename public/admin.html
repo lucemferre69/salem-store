@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/imagenes/logo.png">
+  <link rel="stylesheet" href="/css/carrito.css">
+  <title>Panel de Productos</title>
+  <style>
+    body { font-family: sans-serif; max-width: 500px; margin: 40px auto; }
+    form { display: flex; flex-direction: column; gap: 10px; }
+    input, button { padding: 10px; }
+    #panelAdmin { display: none; }
+  </style>
+</head>
+<body>
+  <h2>Administración de Productos</h2>
+  
+  <div id="panelAdmin">
+    <form id="formProducto">
+      <input type="text" id="nombre" placeholder="Nombre del producto" required>
+      <input type="number" id="precio" placeholder="Precio" required>
+      <textarea id="descripcion" placeholder="Descripción" required></textarea>
+      <input type="number" id="stock" placeholder="Stock" required>
+      <input type="text" id="categoria" placeholder="Categoría" required>
+      <input type="file" id="imagen" accept="image/*" required>
+      <button type="submit">Guardar producto</button>
+    </form>
+  </div>
+
+  <p id="mensaje"></p> 
+  <script type="module" src="/js/admin.js"></script>
+</body>
+</html>
