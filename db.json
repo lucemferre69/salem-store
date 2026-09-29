@@ -22,7 +22,7 @@
       "id": 1,
       "nombre": "Remera básica blanca",
       "precio": 8500,
-      "descripcion": "Remera de algodón básica blanca ideal para salir a cualquier lugar.",
+      "descripcion": "Lorem ipsum Tamer traveled from Route 9 to Route 7 via Route 9 Tunnel. Porygon is a Virtual Pokémon. Battle Legend spotted Machop in Kalos. Janitor used a Beast Ball to catch Metapod. You can find the Hulbury Stadium in Galar. The leader at Vermilion Gym specializes in Electric Pokémon. Kingler is a Pincer Pokémon.",
       "imagen": "/imgDB/logo.jpg",
       "categoria": "remeras",
       "stock": 20
@@ -31,7 +31,7 @@
       "id": 2,
       "nombre": "Remera básica negra",
       "precio": 8500,
-      "descripcion": "Remera de algodón básica negra ideal para salir a cualquier lugar.",
+      "descripcion": "Lorem ipsum Principal took Diglett's Cave from Route 11 to Route 2. Nidorina was found in Route 18. You can find the Striaton Gym in Unova. Owner spotted Vaporeon in Kanto. You can find the Stow-on-Side Stadium in Galar. Aqua Admin's favorite Pokémon is Eevee. Snorlax is a Sleeping Pokémon. Doduo evolved into Dodrio.",
       "imagen": "/imgDB/logo.jpg",
       "categoria": "remeras",
       "stock": 10
@@ -40,7 +40,7 @@
       "id": 3,
       "nombre": "Remera básica roja",
       "precio": 9000,
-      "descripcion": "Remera de algodón básica roja ideal para salir a cualquier lugar.",
+      "descripcion": "Lorem ipsum Doduo is a Twin Bird Pokémon. Magikarp is a Fish Pokémon. League Staff spotted Haunter in Hoenn. Koffing is a Poison Gas Pokémon. You can earn the Fog Badge at Ecruteak Gym. Rapidash was found in Olivine Lighthouse. You can earn the Ice Badge at Circhester Stadium.",
       "imagen": "/imgDB/logo.jpg",
       "categoria": "remeras",
       "stock": 5
@@ -49,7 +49,7 @@
       "id": 4,
       "nombre": "Remera básica gris",
       "precio": 10000,
-      "descripcion": "Remera de algodón básica gris ideal para salir a cualquier lugar.",
+      "descripcion": "Lorem ipsum Macro Cosmos's gave a Cornn Berry to Slowpoke. Hex Maniac explored Anville Town in Unova. Krabby evolved into Kingler. Hex Maniac used a Love Ball to catch Electrode. You can find the Spikemuth Gym in Galar.",
       "imagen": "/imgDB/logo.jpg",
       "categoria": "remeras",
       "stock": 30
@@ -58,7 +58,7 @@
       "id": 5,
       "nombre": "Remera básica verde",
       "precio": 4000,
-      "descripcion": "Remera de algodón básica verde ideal para salir a cualquier lugar.",
+      "descripcion": "Lorem ipsum Teacher used a Ultra Ball to catch Marowak. The leader at Hammerlocke Stadium specializes in Dragon Pokémon. Poliwag was found in Route 32. Gentleman visited Route 9 in Kalos. The leader at Fortree Gym specializes in Flying Pokémon.",
       "imagen": "/imgDB/logo.jpg",
       "categoria": "remeras",
       "stock": 6
@@ -67,7 +67,7 @@
       "id": 6,
       "nombre": "Remera básica azul",
       "precio": 5000,
-      "descripcion": "Remera de algodón básica azul ideal para salir a cualquier lugar.",
+      "descripcion": "Lorem ipsum Depot Agent gave a Leppa Berry to Golduck. Parasol Lady took Route 2 from Pewter City to Diglett's Cave. Teacher traveled from Ruins of Conflict to Iki Town via Mahalo Trail. Cyclist used a Fast Ball to catch Dodrio. You can find the Petalburg Gym in Hoenn. Grimer learned Poison Gas. Motorcyclist's favorite Pokémon is Charizard. Team Skull Boss spotted Ditto in Kalos.",
       "imagen": "/imgDB/logo.jpg",
       "categoria": "remeras",
       "stock": 25
@@ -77,8 +77,16 @@
     {
       "id": 1,
       "usuarioId": 1,
-      "items": [],
-      "total": 0
+      "items": [
+        {
+          "productoId": 1,
+          "nombre": "Remera básica blanca",
+          "precio": 8500,
+          "imagen": "/imgDB/logo.jpg",
+          "cantidad": 7
+        }
+      ],
+      "total": 59500
     },
     {
       "usuarioId": 2,

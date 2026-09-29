@@ -16,7 +16,7 @@ async function cargarCarrito() {
 
   // Si el carrito está vacío
   if (carrito.items.length === 0) {
-    contenedor.innerHTML = '<p>Tu carrito está vacío</p>';
+    contenedor.innerHTML = '<p>Tu carrito está vacío :(</p>';
     return;
   }
 
@@ -30,12 +30,14 @@ async function cargarCarrito() {
 
     card.innerHTML = `
       <img src="${item.imagen}" alt="${item.nombre}">
+      <div>
       <h3>${item.nombre}</h3>
       <p>Precio: $${item.precio}</p>
       <p>Cantidad: ${item.cantidad}</p>
       <p>Subtotal: $${item.precio * item.cantidad}</p>
-      <button onclick="eliminarDelCarrito(${item.productoId})">Eliminar</button>
-    `;
+      <button onclick="eliminarDelCarrito(${item.productoId})">X</button>
+      </div>
+      `;
 
     contenedor.appendChild(card);
   });
@@ -70,7 +72,7 @@ function compartirPedido() {
   const usuarioNombre = localStorage.getItem('userName');
   
   // Armás el mensaje con los items del carrito
-  let mensaje = `🛍️ Pedido de ${usuarioNombre}:\n\n`;
+  let mensaje = `𖠌 Pedido de ${usuarioNombre}:\n\n`;
   
   carrito.items.forEach(item => {
     mensaje += `• ${item.nombre} x${item.cantidad} - $${item.precio * item.cantidad}\n`;
@@ -79,6 +81,6 @@ function compartirPedido() {
   mensaje += `\nTotal: $${carrito.total}`;
 
   // Encode para URL y abrís WhatsApp
-  const url = `https://wa.me/5492604012205?text=${encodeURIComponent(mensaje)}`;
+  const url = `https://wa.me/5492604586906?text=${encodeURIComponent(mensaje)}`;
   window.open(url);
 }

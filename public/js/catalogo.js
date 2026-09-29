@@ -55,10 +55,12 @@ productos.forEach(producto => {
   
   card.innerHTML = `
     <img src="${producto.imagen}" alt="${producto.nombre}">
+    <div>
     <h3>${producto.nombre}</h3>
     <p>$${producto.precio}</p>
     <button onclick="event.stopPropagation(); agregarAlCarrito(${producto.id})">Agregar al carrito</button>
-  `;
+    </div>
+    `;
   card.addEventListener('click', () => {
   window.location.href = `producto.html?id=${producto.id}`;
 });
