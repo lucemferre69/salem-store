@@ -90,10 +90,17 @@
           "nombre": "Remera básica roja",
           "precio": 9000,
           "imagen": "/imgDB/logo.jpg",
-          "cantidad": 2
+          "cantidad": 1
+        },
+        {
+          "productoId": 1,
+          "nombre": "Remera básica blanca",
+          "precio": 8500,
+          "imagen": "/imgDB/logo.jpg",
+          "cantidad": 1
         }
       ],
-      "total": 26500
+      "total": 26000
     },
     {
       "usuarioId": 2,

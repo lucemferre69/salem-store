@@ -65,7 +65,7 @@ window.eliminarDelCarrito = async function (productoId) {
   });
 
   // Recargás el carrito en pantalla
-  cargarCarrito();
+  window.location.reload();
 }
 
 function compartirPedido() {
