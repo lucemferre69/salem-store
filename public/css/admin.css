@@ -1,0 +1,81 @@
+@font-face {
+  src: url("/fonts/transfonter.org-20250910-190329/AliceInWonderland.woff") format(woff);
+  font-family: 'AliceInWonderland';
+  font-weight: normal;
+  font-style: normal;}
+
+@font-face {src: url("fonts/old_horror_films/Old\ Horror\ Films\ 1-0.ttf") format("truetype");
+font-family: 'Old Horror Films';
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {src: url("fonts/transfonter.org-20250910-194917/VanHelsing-Regular.woff") format(woff);
+font-family: 'VanHelsing';
+font-weight: normal;
+font-style: normal;
+
+@font-face {src: url("fonts/safira_march/SafiraMarch.ttf") format(".ttf");
+    font-family: 'Safira March';
+    front-weight: normal;
+    front-style: normal;
+}
+
+}
+body {
+    margin: 0;
+    background-color: #0f0f0f;
+    color: whitesmoke;
+    font-family: 'VanHelsing';
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #0f0f0f;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -10px 10px -5px rgb(0, 0, 0);
+}
+.inicio {
+    color: red;
+    font-family: 'AliceInWonderland';
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+}
+
+h2 {
+    margin: 7% 15% 20px 15%;
+    text-align: center;
+}
+form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+    
+input, textarea, button { 
+    padding: 10px;
+    width: 80%; 
+}
+
+#panelAdmin { 
+    display: none;
+    width: 70%;
+    margin: 0 15%; 
+}
+
+#mensaje {
+    margin: 20px 15% 20px 15%;
+    text-align: center;
+    font-size: 25px;
+}

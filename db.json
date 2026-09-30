@@ -79,14 +79,21 @@
       "usuarioId": 1,
       "items": [
         {
-          "productoId": 1,
-          "nombre": "Remera básica blanca",
+          "productoId": 2,
+          "nombre": "Remera básica negra",
           "precio": 8500,
           "imagen": "/imgDB/logo.jpg",
-          "cantidad": 7
+          "cantidad": 1
+        },
+        {
+          "productoId": 3,
+          "nombre": "Remera básica roja",
+          "precio": 9000,
+          "imagen": "/imgDB/logo.jpg",
+          "cantidad": 2
         }
       ],
-      "total": 59500
+      "total": 26500
     },
     {
       "usuarioId": 2,
